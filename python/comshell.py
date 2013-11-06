@@ -1,4 +1,3 @@
-
 # Allows second user to execute commands in a shell environment on the ZNC host machine
 # This module is one of my bot modules, which means I use it with a separate connection
 # to an IRC server than the one I use.
@@ -15,6 +14,7 @@ import os
 
 class comshell(znc.Module):
 
+    # hostmask must be a regex pattern
     hostmask = "ALLOWED HOSTMASK HERE"
 
     description = "Implements $ <command> shell in channels and query"
