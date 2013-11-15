@@ -7,6 +7,9 @@ import re
 
 class masshl(znc.Module):
     
+    description = "Mass highlight management"
+    module_types = [znc.CModInfo.NetworkModule]
+    
     def OnLoad(self, args, message):
         self.nv['chans'] = ""
         self.nv['limit'] = "4"
